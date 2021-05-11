@@ -1,0 +1,209 @@
+
+/* Header and navigation styles */
+header {
+    height: 100px;
+    width: 80%;
+    background-color: teal;
+    position: fixed;
+    top: 0;
+    left: 10%;
+    z-index: 1;
+  }
+  
+  nav > ul > li > a {
+    color: black;
+    width: 100px;
+    font-size: 25px;
+  }
+  
+  nav > ul > li > a:hover {
+    color: white;
+    cursor: pointer;
+    transition: color 0.15s ease-in-out;
+  }
+  
+  nav > ul > li > a::before {
+    margin-right: 5px;
+    content: "/";
+  }
+  
+  #menu {
+    width: 100px;
+    height: calc(100% - 70px);
+    border: dotted 2px;
+    display: block;
+    align-items: flex-end;
+    justify-content: space-around;
+  }
+  
+  /*Hamburger menu*/
+  rect {
+    transition: transform 0.3s ease;
+  }
+  .top {
+    transform: translateX(17px) rotate(45deg) translateY(-6px);
+    transition: transform 0.3s ease;
+  }
+  .middle {
+    transform: scale(0);
+    transition: transform 0.3s ease;
+  }
+  .bottom {
+    transform: rotate(-45deg) translateX(-40px) translateY(-6px);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    #hamburger {
+      margin: 5px;
+      background-color: ;
+      border: none;
+      position: absolute;
+      z-index: 1;
+    }
+    button {
+      background-color: rgba(0,128,128 ,0 );
+      transition: background-color .2s ease-in-out;
+    }
+    .backgroundColorToggle {
+      background-color: rgba(245,222,179 ,1);
+    }
+  
+    #hamburger:hover {
+      cursor: pointer;
+    }
+  
+    #hamburger > p {
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      height: 1px;
+      overflow: hidden;
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+    }
+  
+    nav {
+      opacity: 1;
+      transition: left 0.3s ease-in-out;
+    }
+  
+    nav > ul > li {
+      color: black;
+      width: 110px;
+      font-size: 25px;
+      margin-top: 10px;
+      text-align: left;
+    }
+  
+    .menuToggle {
+      display: block;
+      height: 350px;
+      width: 180px;
+      opacity: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    ul {
+  
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 350px;
+      width: 180px;
+      background-color: wheat;
+      position: absolute;
+      top: 0px;
+      left: -1000px;
+      transition: left .2s ease-in-out;
+    }
+    .show {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: wheat;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    #hamburger {
+      margin: 5px;
+      background-color: ;
+      border: none;
+      position: absolute;
+      z-index: 1;
+    }
+    button {
+      background-color: rgba(0,128,128 ,0 );
+      transition: background-color .2s ease-in-out;
+    }
+    .backgroundColorToggle {
+      background-color: rgba(245,222,179 ,1);
+    }
+    #hamburger:hover {
+      cursor: pointer;
+    }
+  
+    #hamburger > p {
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      height: 1px;
+      overflow: hidden;
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+    }
+  
+    nav {
+      opacity: 1;
+      transition: left 0.3s ease-in-out;
+    }
+  
+    nav > ul > li  {
+      color: black;
+      width: 110px;
+      font-size: 25px;
+      margin-top: 15px;
+      text-align: left;
+    }
+  
+    
+    .menuToggle {
+      display: block;
+      height: 350px;
+      width: 180px;
+      opacity: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    ul {
+  
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 350px;
+      width: 180px;
+      background-color: wheat;
+      position: absolute;
+      top: 0px;
+      left: -1000px;
+      transition: left .2s ease-in-out;
+    }
+    .show {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: wheat;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+  }
+  
