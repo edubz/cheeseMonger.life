@@ -48,3 +48,18 @@
       background-color: whitesmoke;
       border-top: solid 1px;
   }
+
+
+  .r-trig {
+    position: absolute;
+    right: 5px;
+    top: calc(50% - 35px);
+  }
+  .l-trig {
+    position: absolute;
+    left: 5px;
+    top: calc(50% - 35px);
+  }
+  .trig:hover {
+    cursor: pointer;
+  }
