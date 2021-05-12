@@ -26,7 +26,7 @@ hamburger.onclick = function () {
   burgerSvg[0].classList.toggle("top");
   burgerSvg[1].classList.toggle("middle");
   burgerSvg[2].classList.toggle("bottom");
-  if (nav.classList !== "menuToggle") {
+  if (nav.classList != "menuToggle") {
     navLink[0].setAttribute("tabindex", -1);
     navLink[1].setAttribute("tabindex", -1);
     navLink[2].setAttribute("tabindex", -1);
