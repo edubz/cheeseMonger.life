@@ -122,7 +122,25 @@ nav ul li a:hover:after {
   
   /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 600px) {
-
+    header {
+      height: 80px;
+      width: 100%;
+      background-color: whitesmoke;
+      position: fixed;
+      top: 0px;
+      left: 0;
+      z-index: 1;
+      border-bottom: solid 1px;
+      border-top: solid 1px;
+    }
+    main{
+      width: 100%;
+      left: 0;
+    }
+    footer {
+      width: 100%;
+      left: 0;
+    }
     button {
       background-color: rgba(0,128,128 ,0 );
       transition: background-color .2s ease-in-out;
