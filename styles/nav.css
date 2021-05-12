@@ -175,7 +175,7 @@ nav ul li a:hover:after {
       justify-content: center;
       height: 350px;
       width: 180px;
-      background-color: wheat;
+      background-color: whitesmoke;
       position: absolute;
       top: 0px;
       left: -1000px;
@@ -185,7 +185,10 @@ nav ul li a:hover:after {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      background-color: wheat;
+      background-color: whitesmoke;
+      border-right: solid 1px;
+      border-bottom: solid 1px;
+      border-left: solid 1px;
       position: absolute;
       top: 0px;
       left: 0px;
