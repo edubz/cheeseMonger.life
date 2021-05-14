@@ -90,3 +90,8 @@
   .bannerSpan:hover {
     cursor: pointer;
   }
+  .gal_img {
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 150px);
+  }
