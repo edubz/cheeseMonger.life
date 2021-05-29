@@ -80,7 +80,7 @@
   .bannerSpan:nth-of-type(2){
     position: absolute;
     bottom: 5px;
-    left: calc(50% - 10px)
+    left: calc(50% - 10px);
   }
   .bannerSpan:nth-of-type(3){
     position: absolute;
