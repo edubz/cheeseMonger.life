@@ -4,7 +4,7 @@ header {
     height: 80px;
     width: 80%;
     background-color: whitesmoke;
-    position: fixed;
+    position: absolute;
     top: 0px;
     left: 10%;
     z-index: 1;
