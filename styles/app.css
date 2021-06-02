@@ -28,6 +28,8 @@
     top: 100px;
     left: 10%; 
     z-index: 0;
+    display: flex;
+    flex-direction: column;
   }
 
   .banner{
@@ -39,7 +41,7 @@
   }
 
   footer {
-      position: absolute;
+      position: relative;
       top: 100vh;
       left: 10%;
       width: 80%;
@@ -93,4 +95,11 @@
     position: absolute;
     top: calc(50% - 100px);
     left: calc(50% - 150px);
+  }
+
+  .test {
+    width: 300px;
+    height: 300px;
+    border: solid 2px;
+    position: relative;
   }
