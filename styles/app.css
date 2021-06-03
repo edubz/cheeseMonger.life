@@ -39,7 +39,6 @@
       background-color: wheat;
       width: 100%;
   }
-
   footer {
       position: relative;
       top: 100vh;
@@ -49,8 +48,6 @@
       background-color: whitesmoke;
       border-top: solid 1px;
   }
-
-
   .r-trig {
     position: absolute;
     right: 5px;
@@ -72,7 +69,6 @@
     opacity: .75;
     border: solid 1px;
   }
-
   .bannerSpan:nth-of-type(1){
     position: absolute;
     bottom: 5px;
