@@ -6,6 +6,8 @@
     perspective: 800px;
     border-radius: 4px;
     backface-visibility: hidden;
+    border: 0;
+    box-shadow: none;
   }
   .card{
     width: 100%;
@@ -36,9 +38,7 @@
   }
   .back{
       transform: rotateY(180deg);
-      backface-visibility: hidden;
   }
   .flipped{
       transform: rotateY(180deg);
-      backface-visibility: hidden;
   }

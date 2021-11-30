@@ -5,8 +5,9 @@
 <title>Cheese Monger Dot Life</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
-<link href="./styles/app.css" rel="stylesheet">
-<link href="./styles/nav.css" rel="stylesheet">
+<link href="/styles/app.css" rel="stylesheet">
+<link href="/styles/nav.css" rel="stylesheet">
+<link href="/styles/carousel.css" rel="stylesheet">
 <link rel="icon" href="images/cheese.png">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"> 
@@ -39,32 +40,41 @@
     <hr>
     <h1>Welcome to cheese monger.life!</h1>
     
-    <img src="images/cheese.png" height="35px" width="35px" alt="" style="position: absolute; right: 0; top: 7px;">
+    <img src="/images/cheese.png" height="35px" width="35px" alt="" style="position: absolute; right: 0; top: 7px;">
 
     <div class="banner">
-      <div class="trig l-trig" id="left">
-        <svg viewBox="0 0 256 512" width="35" title="angle-left">
-          <path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z" />
-        </svg>
-      </div>
-      <span class="bannerSpan"></span>
-      <span class="bannerSpan"></span>
-      <span class="bannerSpan"></span>
-      <div class="trig r-trig" id="right">
-        <svg viewBox="0 0 256 512" width="35" title="angle-right" >
-          <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
-        </svg>
-      </div>
+      <ul class="slider">
+        <li>
+          <input type="radio" id="slide1" class="radio" name="slide" checked> <label for="slide1"></label>
+          <img src="/images/cheese_platter.jpg">
+        </li>
+      
+        <li>
+          <input type="radio" id="slide2" class="radio" name="slide">
+          <label for="slide2"></label>
+          <img src="/images/gouda.jpg">
+        </li>
+      
+        <li>
+          <input type="radio" id="slide3" class="radio" name="slide">
+          <label for="slide3"></label>
+          <img src="/images/Roquefort.jpg">
+        </li>
     
-      <img src="" alt="" id="display_img">
-    
-      <img src="images/Roquefort.jpg" alt="" id="0" class="gal_img" width="300px" height="200px">
-      <img src="" alt="" id="1" class="gal_img">
-      <img src="" alt="" id="2" class="gal_img">
-
-    </div>
+      
+        <div class="left-trigger" id="left">
+          <div class="left-top"></div>
+          <div class="left-bottom"></div>
+        </div>
+        <div class="right-trigger" id="right">
+          <div class="right-top"></div>
+          <div class="right-bottom"></div>
+        </div>
+      </ul>
   </main>
   <footer></footer>
-  <script src="js/nav.js"></script>
+  <script src="/js/nav.js"></script>
+  <script src="/js/carousel.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.js"></script>
 </body>
 </html>
