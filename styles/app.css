@@ -32,12 +32,21 @@
     flex-direction: column;
   }
 
+  .jokes-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   .banner{
       position: relative;
       top: 0;
       height: 399px;
       background-color: wheat;
       width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
   }
   footer {
       position: relative;
