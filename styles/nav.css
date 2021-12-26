@@ -204,7 +204,7 @@ nav ul li a:hover:after {
     .show {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-end;
       background-color: whitesmoke;
       border-right: solid 1px;
       border-bottom: solid 1px;
@@ -212,6 +212,7 @@ nav ul li a:hover:after {
       position: absolute;
       top: 0px;
       left: 0;
+      padding-bottom: 10px;
     }
   }
   
