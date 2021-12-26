@@ -61,4 +61,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     box-shadow: none;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
   }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+.joles-container::-webkit-scrollbar {
+  display: none;
+}
